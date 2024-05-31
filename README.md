@@ -1,5 +1,6 @@
 ### Log in/ Register form
-(If you like them, give me a star in the top right corner).
+@(If you like them, give me a star in the top right corner).
+
 Template 1:
 Login:
 ![image](https://github.com/Gianguyen1234/Logform/assets/112406680/439e3a34-0c94-4cef-a031-297257bce00f)
