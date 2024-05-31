@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease;
+  background-image: url('red_light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  max-width: 100%;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+.login-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
+}
+
+.login-container h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.5s ease;
+}
+
+.login-container:hover h2 {
+  color: #6c63ff;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.2);
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #574bff;
+  transform: translateY(-2px);
+}
+
+.login-container .register-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  transition: margin-top 0.3s ease;
+}
+
+.login-container:hover .register-link {
+  margin-top: 25px;
+}
+
+.login-container .register-link a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.login-container .register-link a:hover {
+  color: #574bff;
+  text-decoration: underline;
+}
+
+.animations {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

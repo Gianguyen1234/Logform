@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6f91, #ff9671);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.input-group input:focus {
+    background: #e0e0e0;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -10px;
+    left: 40px;
+    font-size: 12px;
+    color: #333;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff6f91;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff4b66;
+}
+
+.forgot-password {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.forgot-password a {
+    color: #ff6f91;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link p {
+    color: #333;
+}
+
+.signup-link a {
+    color: #ff6f91;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
